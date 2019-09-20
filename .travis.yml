@@ -1,12 +1,17 @@
+
+addons:
+  postgresql: 9.6
+after_success:
+  - bundle exec codeclimate-test-reporter
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database travis_ci_test;' -U postgres
+dist: trusty
 language: ruby
 rvm:
-  - "2.4.2"
-env:
-  - DB=postgresql
+  - 2.4.2
 script:
-  - RAILS_ENV=test bundle exec rake db:create db:migrate --trace
-  - bundle exec rspec test/
-before_script:
-  - cp config/database.travis.yml config/database.yml
-  - mysql -e 'create database mydb_test'
-bundler_args: --binstubs=./bundler_stubs
+  - bundle exec rails db:migrate RAILS_ENV=test
+  - bundle exec rspec
+services:
+  - redis-server
