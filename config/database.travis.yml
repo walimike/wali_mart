@@ -2,6 +2,6 @@ default: &default
   adapter: postgresql
 test:
   <<: *default
-  database: walimart_test
+  database: mydb_test
   username: travis
   encoding: utf8
