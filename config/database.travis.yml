@@ -1,0 +1,7 @@
+default: &default
+  adapter: postgresql
+test:
+  <<: *default
+  database: walimart_test
+  username: travis
+  encoding: utf8
