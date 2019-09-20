@@ -8,3 +8,4 @@
 #### Badges
 [![Build Status](https://travis-ci.org/walimike/wali_mart.svg?branch=develop)](https://travis-ci.org/walimike/wali_mart)
 [![Maintainability](https://api.codeclimate.com/v1/badges/79fde07277ea6c6b5245/maintainability)](https://codeclimate.com/github/walimike/wali_mart/maintainability)
+[![Coverage Status](https://coveralls.io/repos/github/walimike/wali_mart/badge.svg)](https://coveralls.io/github/walimike/wali_mart)
