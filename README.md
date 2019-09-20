@@ -7,3 +7,4 @@
 
 #### Badges
 [![Build Status](https://travis-ci.org/walimike/wali_mart.svg?branch=develop)](https://travis-ci.org/walimike/wali_mart)
+[![Maintainability](https://api.codeclimate.com/v1/badges/79fde07277ea6c6b5245/maintainability)](https://codeclimate.com/github/walimike/wali_mart/maintainability)
