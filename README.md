@@ -4,3 +4,6 @@
 
 - The buyer uses wali-mart to browse the products we have to sell, select some to purchase, and supply the information needed to create an order.
 - The seller uses wali-mart to maintain a list of products to sell, to determine the orders that are awaiting shipping, and to mark orders as shipped. (The seller also uses wali-mart to make money and retire to a tropical island)
+
+#### Badges
+[![Build Status](https://travis-ci.org/walimike/wali_mart.svg?branch=develop)](https://travis-ci.org/walimike/wali_mart)
