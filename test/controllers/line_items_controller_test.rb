@@ -22,9 +22,9 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
     follow_redirect!
 
-    assert_select 'h2', 'Your Pragmatic Cart'
+    assert_select 'h2', 'Your Cart'
     # \u00D7 is a way of writing unicord x for the number of items being bought
-    assert_select 'li', "1 \u00D7 Programming Ruby 1.9"
+    assert_select 'td', "Programming Ruby 1.9"
   end
 
   test "should show line_item" do
